@@ -1,0 +1,121 @@
+/* @media screen and (min-width: 851px) {
+  .nav {
+    background-color: var(--color-bg);
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 68px;
+    align-items: center;
+  }
+  .container_nav {
+    display: flex;
+    align-items: center;
+  }
+  .brand {
+    display: flex;
+    margin-left: 50px;
+  }
+  .nav_brand {
+    display: block;
+    color: var(--color-primary);
+  }
+  .nav_brand .h2 {
+    font-weight: 600;
+  }
+  .nav_brand:hover {
+    padding: 1rem;
+    color: var(--color-primary);
+  }
+
+  .items {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 50px;
+  }
+
+  .nav_list {
+    display: flex;
+    scroll-behavior: smooth;
+
+    gap: 1rem;
+  }
+  .nav_items {
+    display: flex;
+  }
+
+  .button {
+    display: flex;
+    color: var(--color-primary);
+    transition: var(--transition);
+    padding: 0.3rem;
+  }
+
+  .button:hover {
+    color: var(--color-primary);
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .nav #iconss {
+    display: none;
+  }
+}*/
+@media screen and (min-width: 640px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    padding: 0.7rem 1.8rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .nav a {
+    background-color: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
+
+  .nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav a.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+  .brand {
+    display: none;
+  }
+
+  .nav_list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    padding: 0.4rem 0.5rem;
+  }
+  .brand {
+    display: none;
+  }
+}

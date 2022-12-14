@@ -1,0 +1,59 @@
+GET http://localhost:3000/api/auth/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiZW1haWwiOiJoZW5kcnlAZ21haWwuY29tIiwiaWF0IjoxNjY5NDQzMzk5LCJleHAiOjE2Njk0NDM0NTl9.TSr4KFcczbZgO6XFx7b54XOIdeKVUmeiur1aeWgLw
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "nas": 3,
+    "username": "hendry3",
+    "name":  "hendry",
+    "password":"123",
+    "confPassword":"123"
+}
+
+
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "hendry",
+    "password": "123"
+}
+
+###
+PUT http://localhost:3000/api/auth/edit
+Content-Type: application/json
+
+{
+    "nas": 1,
+    "username": "hendry",
+    "name":  "hendry",
+    "password":"123",
+    "newPassword":"1234"
+}
+
+
+###
+DELETE  http://localhost:3000/api/auth/delete
+Content-Type: application/json
+
+{
+    "nas": 1,
+    "password":"123"
+}
+
+###
+POST http://localhost:3000/api/atendance/checkin
+Content-Type: application/json
+
+{
+    "nas": 1,
+    "name":"hendry"
+}
+
+###
+GET http://localhost:3000/api/auth
